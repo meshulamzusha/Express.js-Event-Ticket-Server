@@ -4,7 +4,7 @@ import { addEvent } from '../services/eventService.js';
 
 const router = express.Router();
 
-router.use(async (req, res, next) => {
+router.post(async (req, res, next) => {
     try {
         const { username, password } = req.body;
 
