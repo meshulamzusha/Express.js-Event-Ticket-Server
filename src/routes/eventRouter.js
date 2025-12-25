@@ -4,7 +4,7 @@ import { addEvent } from '../services/eventService.js';
 
 const router = express.Router();
 
-router.post(async (req, res, next) => {
+router.use(async (req, res, next) => {
     try {
         const { username, password } = req.body;
 
@@ -35,6 +35,7 @@ router.post(async (req, res, next) => {
         next();
 
     } catch (error) {
+        res.send(error)
         console.log(error);
     }
 })
