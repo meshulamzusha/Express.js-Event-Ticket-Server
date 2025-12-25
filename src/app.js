@@ -1,4 +1,5 @@
 import express from 'express';
+import healthRouter from './routes/healthRouter.js'
 import userRouter from './routes/userRouter.js';
 import eventRouter from './routes/eventRouter.js';
 import buyTicketsRouter from './routes/buyTicketsRouter.js';
@@ -9,7 +10,7 @@ const port = 3000;
 
 app.use(express.json())
 
-
+app.use(healthRouter)
 app.use(purchaseSummaryRouter)
 app.use(userRouter);
 app.use(eventRouter);
