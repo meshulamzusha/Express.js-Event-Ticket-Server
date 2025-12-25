@@ -16,8 +16,8 @@ export async function SummarizePurchases(username) {
 
         const summary = {
             totalTicketsBought: sumTickets,
-            events: uniqueEvents,
-            averageTicketsPerEvent: sumTickets / uniqueEvents.length
+            events: [...uniqueEvents],
+            averageTicketsPerEvent: sumTickets / [...uniqueEvents].length
         }
 
         return summary

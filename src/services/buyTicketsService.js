@@ -23,7 +23,6 @@ export async function buyTickets(body) {
                 await saveDataToFile('./data/receipts.json', JSON.stringify(receipts, null, 2))
 
                 events[index].ticketsForSale -= quantity;
-                console.log(events[index].ticketsForSale -= quantity);
                 
                 await saveDataToFile('./data/events.json', JSON.stringify(events, null, 2))
 
