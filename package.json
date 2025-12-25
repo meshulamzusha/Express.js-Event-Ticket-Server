@@ -1,0 +1,28 @@
+{
+  "name": "express.js-event-ticket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshulamzusha/Express.js-Event-Ticket-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/meshulamzusha/Express.js-Event-Ticket-Server/issues"
+  },
+  "homepage": "https://github.com/meshulamzusha/Express.js-Event-Ticket-Server#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
